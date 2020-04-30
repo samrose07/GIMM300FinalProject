@@ -1,9 +1,9 @@
 import React from 'react';
 import Item from './Item';
-import firebase from 'firebase';
+import firebase, { database, firestore } from 'firebase';
 import {useCollection} from 'react-firebase-hooks/firestore';
-import {IonList} from '@ionic/react';
-
+import {IonList, IonButton, IonIcon} from '@ionic/react';
+import { heart } from 'ionicons/icons';
 interface Props {
     doEdit:any;
 }
@@ -23,17 +23,18 @@ const ItemList: React.FC<Props> = ({doEdit}) => {
     const doDelete = id => {
         firebase.firestore().collection("data").doc(id).delete();
     };
-
     return (
         <IonList id="list">
             {value && value.docs.map(doc => {
                 return (
+                    
                     !loading && (
+                        
                         <Item doc={doc}
                         doEdit = {i => {
                         closeSlidingItems();
                         doEdit(i);
-                        }}
+                        }}                        
                         doDelete = {i => {
                             closeSlidingItems();
                             doDelete(i);
@@ -43,6 +44,7 @@ const ItemList: React.FC<Props> = ({doEdit}) => {
                     )
                 );
             })}
+            
         </IonList>
     );
 }

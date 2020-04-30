@@ -11,6 +11,7 @@ const Tab1: React.FC = () => {
 
   const getEmpty = () => {
     return ({
+      prompt:'',
       title: '',
       content: '',
       date: '',
@@ -20,6 +21,11 @@ const Tab1: React.FC = () => {
     });
   }
 
+  const titleStyle = {
+    color: "black",
+    fontSize: "50"
+}
+
   return (
     <IonPage>
       <IonHeader>
@@ -28,8 +34,7 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       {}
-      <IonContent>
-        
+      <IonContent>        
         <ItemList doEdit={setCurrent}/>
       </IonContent>
     </IonPage>

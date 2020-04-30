@@ -1,20 +1,29 @@
 import React from 'react';
-import { IonItem, IonLabel, IonText, IonItemSliding, IonItemOption, IonItemOptions, IonImg, IonIcon } from '@ionic/react';
-import { document, trash } from 'ionicons/icons';
-
+import { IonButton,IonItem, IonLabel, IonText, IonItemSliding, IonItemOption, IonItemOptions, IonImg, IonIcon } from '@ionic/react';
+import { trash, heart } from 'ionicons/icons';
+import './Item.css';
+import { findAllByDisplayValue } from '@testing-library/react';
+import AddItem from './AddItem';
 interface Props {
     doEdit: any;
     doDelete: any;
     doc: any;
 }
+var count = 0;
 
 const Item: React.FC<Props> = ({ doEdit, doDelete, doc }) => {
     let data = doc.data();
 
     return (
+        
         <IonItemSliding>
             <IonItem>
                 <IonLabel class='ion-text-wrap'>
+                <IonText className="item-prompt">
+                        <div>
+                            {data.prompt}
+                        </div>
+                    </IonText>
                     <IonText className="item-title">
                         <div>
                             {data.title}
@@ -42,7 +51,7 @@ const Item: React.FC<Props> = ({ doEdit, doDelete, doc }) => {
                 <IonItemOption onClick={() => {
                     doEdit(doc.id);
                     }}>
-                    <IonIcon slot="icon-only" icon={document}></IonIcon>
+                    <IonIcon slot="icon-only" icon={trash}></IonIcon>
                 </IonItemOption>
                 <IonItemOption onClick={() => {
                     doDelete(doc.id);
