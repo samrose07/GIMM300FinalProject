@@ -16,17 +16,17 @@ const Item: React.FC<Props> = ({ doEdit, doDelete, doc }) => {
 
     return (
         
-        <IonItemSliding>
+        <IonItemSliding className="theBody">
             <IonItem>
                 <IonLabel class='ion-text-wrap'>
-                <IonText className="item-prompt">
-                        <div>
-                            {data.prompt}
-                        </div>
-                    </IonText>
                     <IonText className="item-title">
                         <div>
                             {data.title}
+                        </div>
+                    </IonText>
+                    <IonText className="item-prompt">
+                        <div>
+                            {data.prompt}
                         </div>
                     </IonText>
                     <IonText className="item-sub-title">
@@ -34,7 +34,7 @@ const Item: React.FC<Props> = ({ doEdit, doDelete, doc }) => {
                             {data.content}
                         </div>
                     </IonText>
-                    <IonText className="item-sub-title">
+                    <IonText className="item-loc">
                         <div>
                             {data.location}
                         </div>

@@ -4,7 +4,7 @@ import { useDocument } from 'react-firebase-hooks/firestore';
 import { IonItem, IonButton, IonInput, IonCard, IonContent, IonCardContent, IonTextarea } from '@ionic/react';
 import DataProps from './components/DataProps';
 import { Plugins } from '@capacitor/core';
-
+import "./Item.css";
 export function debugInfo(logInfo: DataProps) {
     console.log(logInfo.title, logInfo.content, logInfo.date, logInfo.location, logInfo.prompt);
 }
@@ -111,14 +111,14 @@ const AddItem: React.FC<DataProps> = (props) => {
 
 
     return (
-        <IonCard>
+        <IonCard className="thebody">
             <IonCardContent>
                 <IonItem>
                     <p id="theP" contentEditable="true"></p>
 
                 </IonItem>
                 <IonItem>
-                    <IonButton onClick={generatePrompt}>Get your prompt</IonButton>
+                    <IonButton className="item-prompt2" onClick={generatePrompt}>Get your prompt</IonButton>
                 </IonItem>
                 <IonItem>
                     <IonTextarea value={item.title} placeholder="Title" name="title" onIonChange={updateField} >

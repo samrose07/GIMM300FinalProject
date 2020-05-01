@@ -1,11 +1,11 @@
-﻿.body {
+﻿.thebody {
     background-color: #14063A;
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     text-align: center;
 }
 
-.h1 {
+.theh1 {
     font-family: 'Righteous', cursive;
     background-color: #A7383D;
     border-top-right-radius: 20px;
@@ -17,7 +17,7 @@
     color: #FBA7AB;
 }
 
-.p {
+.thep {
     line-height: 35px;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #AA9339;
@@ -29,7 +29,7 @@
     color: #FFEEAA;
 }
 
-.div {
+.thediv {
     margin-top: 50px;
     background-color: #423075;
     border-radius: 10px;
@@ -39,7 +39,7 @@
     width: 75%;
 }
 
-.button {
+.thebutton {
     font-family: 'Righteous', cursive;
     display: inline-block;
     position: relative;
@@ -53,7 +53,7 @@
     border-bottom-right-radius: 20px;
 }
 
-    .button:after {
+    .thebutton:after {
         content: '';
         border: 3px solid #333333;
         top: 5px;
@@ -66,16 +66,16 @@
         white-space: nowrap;
     }
 
-    .button:active {
+    .thebutton:active {
         top: 3px;
         left: 3px;
     }
 
-        .button:active:after {
+        .thebutton:active:after {
             top: 2px;
             left: 2px
         }
 
-    .button:hover {
+    .thebutton:hover {
         background: #7D151A;
     }

@@ -1,9 +1,61 @@
 .item-title {
     font-size: xx-large;
+    margin: auto;
+}
+.item-prompt {
+    font-family: 'Righteous', cursive;
+    background-color: #A7383D;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #7D151A;
+    box-shadow: 2px 4px #540004;
+    width: 100%;
+    display: inline-block;
+    color: #FBA7AB;
+}
+
+.item-prompt2 {
+    font-family: 'Righteous', cursive;
+
+    width: 100%;
+    display: inline-block;
+
+}
+
+.item-sub-title {
+    line-height: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #AA9339;
+    border-radius: 10px;
+    padding: 15px 30px 10px 30px;
+    border: 2px solid #554400;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    color: #FFEEAA;
 }
 .likeBtn {
     
     width: 10%;
     columns: 2;
     
+}
+.thebody {
+    background-color: #14063A;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    text-align: center;
+}
+
+.item-loc {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+:root {
+    background-color:   ;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    text-align: center;
 }
