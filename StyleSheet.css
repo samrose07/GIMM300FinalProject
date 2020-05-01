@@ -1,41 +1,41 @@
 ﻿body {
-    background-color: #14063A;
+    background-color: #95D1FF;
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     text-align: center;
 }
 
 .h1 {
-    font-family: 'Righteous', cursive;
-    background-color: #A7383D;
+    font-family:'Courier New';
+    background-color: #1597FB;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 10px 30px 10px 30px;
-    border: 2px solid #7D151A;
-    box-shadow: 2px 4px #540004;
+    border: 2px solid #CCE9FF;
     display: inline-block;
-    color: #FBA7AB;
+    color: #CCE9FF;
 }
 
 .p {
     line-height: 35px;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #AA9339;
+    background-color: #1597FB;
     border-radius: 10px;
     padding: 15px 30px 10px 30px;
-    border: 2px solid #554400;
+    border: 2px solid #CCE9FF;
     display: inline-block;
     width: 65%;
-    color: #FFEEAA;
+    color: #CCE9FF;
 }
 
 .div {
     margin-top: 50px;
-    background-color: #423075;
+    background-color: #6BBFFF;
     border-radius: 10px;
     padding: 30px 10px 30px 10px;
-    box-shadow: 3px 6px #281758;
+    box-shadow: 3px 3px 3px 3px #1597FB;
     display: inline-block;
+    border: 2px solid #CCE9FF;
     width: 75%;
 }
 
@@ -44,38 +44,20 @@
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: #540004;
-    border: 3px solid #D1686E;
+    color: #CCE9FF;
+    border: 3px solid #CCE9FF;
     padding: 20px 30px;
     margin: 40px;
-    background-color: #A7383D;
+    background-color: #1597FB;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-    .button:after {
-        content: '';
-        border: 3px solid #333333;
-        top: 5px;
-        left: 5px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-        color: #f2f2f2;
-        white-space: nowrap;
-    }
 
     .button:active {
         top: 3px;
         left: 3px;
     }
 
-        .button:active:after {
-            top: 2px;
-            left: 2px
-        }
-
     .button:hover {
-        background: #7D151A;
+        background: #95D1FF;
     }
