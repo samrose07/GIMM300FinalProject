@@ -72,7 +72,7 @@ const AddItem: React.FC<DataProps> = (props) => {
     };
 
     const updateField = e => {
-        
+
         e.preventDefault();
         debugInfo(item);
         setItem({
@@ -81,7 +81,7 @@ const AddItem: React.FC<DataProps> = (props) => {
         });
     };
 
-    
+
     const generatePrompt = () => {
         let prompts = ["The world crumbles with each step that she takes. Splicers surround the compound as she begins her escape - her freedom to...",
         "A bear treads down the mounten with each step he feels his consciousness tearing away. His momma told him to be brave but she could never prepare him for the white wolf.",
@@ -106,7 +106,7 @@ const AddItem: React.FC<DataProps> = (props) => {
         let randomNumber = Math.floor(Math.random() * prompts.length);
         item.prompt = prompts[randomNumber];
         document.getElementById("theP").innerHTML = prompts[randomNumber];
-        
+
     }
 
 
@@ -115,7 +115,7 @@ const AddItem: React.FC<DataProps> = (props) => {
             <IonCardContent>
                 <IonItem>
                     <p id="theP" contentEditable="true"></p>
-                   
+
                 </IonItem>
                 <IonItem>
                     <IonButton onClick={generatePrompt}>Get your prompt</IonButton>
