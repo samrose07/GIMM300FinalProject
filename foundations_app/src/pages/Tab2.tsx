@@ -4,8 +4,6 @@ import './RandomPrompts';
 import './Tab2.css';
 import AddItem from '../AddItem';
 import ItemList from '../ItemList';
-import { mic } from 'ionicons/icons';
-//import { NewPrompt } from './RandomPrompts';
 import { analytics } from 'firebase';
 const Tab2: React.FC = () => {
 

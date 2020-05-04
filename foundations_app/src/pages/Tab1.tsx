@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardHeader, IonCard, IonCardContent } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
 import './Tab1.css';
-import AddItem from '../AddItem';
 import ItemList from '../ItemList';
-import { mic } from 'ionicons/icons';
 const Tab1: React.FC = () => {
 
   const [current, setCurrent] = useState(null);
@@ -20,11 +18,6 @@ const Tab1: React.FC = () => {
       initialValue: ''
     });
   }
-
-  const titleStyle = {
-    color: "black",
-    fontSize: "50"
-}
 
   return (
     <IonPage>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonButton,IonItem, IonLabel, IonText, IonItemSliding, IonItemOption, IonItemOptions, IonImg, IonIcon } from '@ionic/react';
+import { IonButton,IonItem, IonLabel, IonText, IonItemSliding, IonItemOption, IonItemOptions, IonIcon } from '@ionic/react';
 import { trash, heart } from 'ionicons/icons';
 import './Item.css';
 import { findAllByDisplayValue } from '@testing-library/react';
@@ -9,7 +9,7 @@ interface Props {
     doDelete: any;
     doc: any;
 }
-var count = 0;
+
 
 const Item: React.FC<Props> = ({ doEdit, doDelete, doc }) => {
     let data = doc.data();
